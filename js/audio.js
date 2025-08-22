@@ -17,6 +17,6 @@ const overlay = document.getElementById("overlay");
 
       // Reproducir audio al 11%
       audio.muted = false;
-      audio.volume = 0.2;
+      audio.volume = 0.3;
       audio.play().catch(err => console.warn("Error al reproducir audio:", err));
     });
