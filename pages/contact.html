@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contactanos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sobre BL4CK CA$H">  
+	<meta name="author" content="TecnoProjects Security">
+    <meta name="keywords" content="BL4CK CA$H, Catalogo, wear, clothing, moda, fashion, streetwear, street style, urban style, online store, ecommerce, shopping, trendy, stylish, casual wear, accessories, apparel, fashion trends, seasonal collection, limited edition, exclusive designs, quality clothing, affordable fashion, sustainable fashion, fashion blog, style inspiration, outfit ideas, fashion photography, brand identity, logo design, graphic design, web design, digital marketing, stay dangerous, belico, stay dangerous, black cash, bl4ck cash, bl4ckcash, blackcash, black cash">
+    <meta name="google-site-verification" content="your-google-site-verification-code">
+    <link rel="icon" type="image/ico" href="../img/banner.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/audio.css">
+    
+</head>
+<body>
+    <audio autoplay muted playsinline loop id="audio-bg">
+        <source src="../Audio-Background/track.mp3" type="audio/mpeg">
+    </audio>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <div id="overlay">
+        <div id="modalBienvenida">
+            <h2>Contactanos en redes sociales</h2>
+            <button id="btnEntrar">Aceptar</button>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i><img src="../img/BCO.png" alt="inicio" class="banner-nav"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars" id="barras"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-3" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-2" href="../404/404.html">Colecciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" href="about.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1 active" href="../pages/contact.html">Contacto</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="../img/hero.png"></div>
+
+    <div class="container-fluid tm-mt-60">
+        <div class="row tm-mb-50">
+            <div class="col-lg-4 col-12 mb-5">
+                <h2 class="tm-text-primary mb-5" id="sbt">Negocios</h2>
+                <form id="contact-form" action="" method="POST" class="tm-contact-form mx-auto">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control rounded-0" placeholder="Nombre" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control rounded-0" placeholder="Correo" required />
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="contact-select" name="inquiry">
+                            <option value="-">Colaboracion</option>
+                            <option value="sales">Marketing</option>
+                            <option value="creative">Compra para distribucion</option>
+                            <option value="uiux">Sugerencias</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Mensaje" required=></textarea>
+                    </div>
+
+                    <div class="form-group tm-text-right">
+                        <button type="button" class="btn btn-primary" id="sendEmailBtn">Enviar</button>
+                        <script>
+                        document.getElementById('sendEmailBtn').addEventListener('click', function() {
+                            var name = document.querySelector('input[name="name"]').value;
+                            var email = document.querySelector('input[name="email"]').value;
+                            var inquiry = document.querySelector('select[name="inquiry"]').value;
+                            var message = document.querySelector('textarea[name="message"]').value;
+                            var mailto = "mailto:bl4ckcash.contacto@gmail.com"
+                                + "?subject=Contacto BL4CK CA$H: " + encodeURIComponent(inquiry)
+                                + "&body=" + encodeURIComponent(
+                                    "Nombre: " + name + "\n" +
+                                    "Email: " + email + "\n" +
+                                    "Mensaje: " + message
+                                );
+                            window.location.href = mailto;
+                        });
+                        </script>
+                    </div>
+                </form>                
+            </div>
+            <div class="col-lg-4 col-12 mb-5">
+                <div class="tm-address-col">
+                    <h2 class="tm-text-primary mb-5" id="sbt">Pedidos</h2>
+                    <p class="tm-mb-50">De momento los pedidos que tengas para nosotros, seran atraves de whatsapp e instagram dependiendo de tu ubicacion. </p>
+                    <p class="tm-mb-50">Podemos hacer entregas personales para ahorrarte gastos de envio solamente si te encuentras en las zonas de CDMX, Acambaro, Moroleon y uriangato.<br>Si eres de otra ubicacion en Mexico tu entrega se haria por paqueteria, coordinamos las entregas por medio de whatsapp e instagram, solo debes enviarnos un mensaje con el modelo que buscas y talla.</p>
+                    <address class="tm-text-gray tm-mb-50">
+                        Los pagos se hacen atravez de transferencia bancaria<br>
+                        Nosotros te compartimos el numero de cuenta por privado.
+                    </address>
+                    <ul class="tm-contacts">
+                        <li>
+                            <a href="https://api.whatsapp.com/send/?phone=524171028032&text=Hola+me+interesa+tu+producto&type=phone_number&app_absent=0" target="_blank" class="tm-text-gray" id="footer-sponsor">
+                                <i class="fas fa-phone"></i>
+                                Acambaro / Moroleon: +52 417 102 8032
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://api.whatsapp.com/send/?phone=525519071789&text=Hola+me+interesa+tu+producto&type=phone_number&app_absent=0" target="_blank" class="tm-text-gray" id="footer-sponsor">
+                                <i class="fas fa-phone"></i>
+                                CDMX: +52 1 55 1907 1789
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/bl4ckcash_wear" tarjet="_blank" class="tm-text-gray" id="footer-sponsor">
+                                <i class="fab fa-instagram"></i>
+                                Por paqueteria: @Bl4ckCash_Wear
+                            </a>
+                        </li>
+                    </ul>
+                </div>                
+            </div>
+            <div class="col-lg-4 col-12">
+                <h2 class="tm-text-primary mb-5" id="sbt">Ubicacion</h2>
+                <!-- Map -->
+                <div class="mapouter mb-4">
+                    <div class="gmap-canvas">
+                        <iframe width="100%" height="520" id="gmap-canvas"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29969.88330559422!2d-101.21879968391141!3d20.124224053704793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cfa3bc9a849a9%3A0x7148633ed292b235!2zTW9yb2xlw7NuLCBHdG8u!5e0!3m2!1ses-419!2smx!4v1755831384807!5m2!1ses-419!2smx""
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>               
+            </div>
+        </div>
+    </div> <!-- container-fluid, tm-container-content -->
+
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title" id="sbt">Sobre Nosotros</h3>
+                    <p>Somos una marca de ropa 100% original, playeras oversize con diseños pensados para el estilo urbano, nos mantenemos en constante actualizacion y creando diseños nuevos, puedes hacer tus pedidos por medio de nuestras redes sociales.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title" id="ctt">Contacto</h3>
+                    <ul class="tm-footer-links pl-0">
+                        <li><a href="https://instagram.com/bl4ckcash_wear" tarjet="_blank">Instagram</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=524171028032&text=Hola+me+interesa+tu+producto&type=phone_number&app_absent=0" target="_blank">Phone 1</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=525519071789&text=Hola+me+interesa+tu+producto&type=phone_number&app_absent=0" target="_blank">Phone 2</a></li>
+                        <li><a href="../pages/contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
+                        <li class="mb-2"><a href="https://api.whatsapp.com/send/?phone=524171028032&text=Hola+me+interesa+tu+producto&type=phone_number&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                        <li class="mb-2"><a href="https://api.whatsapp.com/send/?phone=525519071789&text=Hola+me+interesa+tu+producto&type=phone_number&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                        <li class="mb-2"><a href="https://instagram.com/bl4ckcash_wear" tarjet="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li class="mb-2"><a href="../404/404.html"><i class="fab fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-12 px-5 mb-3">
+                    Copyright 2025 BL4CK CA$H WEAR. All rights reserved.
+                </div>
+                <div class="col-lg-4 col-md-5 col-12 px-5 text-right">
+                    Designed by: <a href="https://tecnoprojects-security.vercel.app" class="tm-text-gray" rel="sponsored" target="_blank" id="footer-sponsor">TecnoProjects Security</a> | <a href="https://ulisescamacho.vercel.app" class="tm-text-gray" rel="sponsored" target="_blank" id="footer-sponsor">Ulises L Camacho</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/plugins.js"></script>
+    <script src="../js/audio.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+</html>
