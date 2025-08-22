@@ -3,5 +3,4 @@ BL4CK CA$H no se explica, se entiende. No nacimos para encajar, nacimos para imp
 No representamos modas pasajeras, representamos la mentalidad del que construye imperios en silencio y camina con la frente en alto, aunque el mundo lo quiera ver caer.<br>
 Aquí no hay miedo, solo estilo con filo.<br>
 <b>Stay Dangerous</b>.
-
-
+<img src="">
