@@ -1,7 +1,8 @@
 #overlay {
       position: fixed;
       top:0; left:0;
-      width:100%; height:100%;
+      width:100%;
+      height:100vh; /* asegura cubrir toda la ventana visible */
       background: rgba(0,0,0,0.7);
       display:flex;
       align-items:center;
@@ -9,7 +10,7 @@
       opacity:0;
       pointer-events:none;
       transition: opacity 0.5s ease;
-      z-index: 999;
+      z-index: 9999; /* más alto que todo lo demás */
       padding: 1rem;
       box-sizing: border-box;
     }
@@ -23,12 +24,12 @@
       padding: 2rem 3rem;
       text-align: center;
       color: white;
-      box-shadow: 0 0 30px rgba(216, 216, 216, 0.7);
+      box-shadow: 0 0 30px rgba(155, 155, 155, 0.7);
       transform: scale(0.8);
       opacity:0;
       transition: all 0.5s ease;
       width: 100%;
-      max-width: 400px;  /* no demasiado grande en pantallas grandes */
+      max-width: 400px;
     }
     #modalBienvenida.active {
       transform: scale(1);
